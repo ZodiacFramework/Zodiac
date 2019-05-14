@@ -1,0 +1,40 @@
+
+def func (a int, b int) (c int) (
+    return (+ a b)
+)
+
+def main (argc int, argv char**) (int) (
+    a int = 3
+    c int = 4
+    d = func a c
+    println "Hello, World!"
+)
+
+blockdef comment (contents, states) () (
+
+)
+
+blockdef example (contents, states) () (
+    println "blockdef"
+)
+
+# this is a comment
+
+{comment
+    This is multiline comments.
+}
+
+{example :state1 :state2
+    :state3
+    hoge
+    fuga
+    piyo
+    poyo
+}
+
+{example :state1 :state2}
+    hoge
+    fuga
+    piyo
+    poyo
+{/example2}
